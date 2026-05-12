@@ -1,14 +1,16 @@
-import React from "react";
-import { Link, NavLink } from "react-router";
+import React from 'react';
+import { Link, NavLink } from 'react-router';
 
 const Navbar = () => {
   const links = (
     <>
       <li>
         <NavLink
-          to={"/"}
+          to={'/'}
           className={({ isActive }) =>
-            `font-semibold mr-1 ${isActive ? "text-green-500 border border-green-500" : ""}`
+            `font-semibold mr-1 ${
+              isActive ? 'text-green-500 border border-green-500' : ''
+            }`
           }
         >
           Home
@@ -17,9 +19,11 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            `font-semibold mr-1 ${isActive ? "text-green-500 border border-green-500" : ""}`
+            `font-semibold mr-1 ${
+              isActive ? 'text-green-500 border border-green-500' : ''
+            }`
           }
-          to={"/books"}
+          to={'/books'}
         >
           Listed Books
         </NavLink>
@@ -27,9 +31,11 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            `font-semibold mr-1 ${isActive ? "text-green-500 border border-green-500" : ""}`
+            `font-semibold mr-1 ${
+              isActive ? 'text-green-500 border border-green-500' : ''
+            }`
           }
-          to={"/page-to-read"}
+          to={'/read'}
         >
           Page to Read
         </NavLink>
@@ -49,13 +55,13 @@ const Navbar = () => {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                {" "}
+                {' '}
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
                   d="M4 6h16M4 12h8m-8 6h16"
-                />{" "}
+                />{' '}
               </svg>
             </div>
             <ul
